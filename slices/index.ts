@@ -6,4 +6,5 @@ export const components = {
   features: dynamic(() => import("./Features")),
   hero: dynamic(() => import("./Hero")),
   testemonials: dynamic(() => import("./Testimonials")),
+  text_with_image: dynamic(() => import("./TextWithImage")),
 };
