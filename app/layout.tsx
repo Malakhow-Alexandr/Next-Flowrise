@@ -26,7 +26,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: settings.data.site_title || "flowrise",
     description:
-    settings.data.meta_description || "Flowrise is the relaxing app for you.",
+      settings.data.meta_description || "Flowrise is the relaxing app for you.",
     openGraph: {
       images: [settings.data.og_image.url || ""],
     },
@@ -45,7 +45,8 @@ export default function RootLayout({
 
         {children}
 
-        <Footer/>
+        <Footer />
+        <div className="fixed bg-gradient-to-tr from-emerald-50 to-cyan-50 z-[-1] inset-0 opacity-50"/>
       </body>
     </html>
   );

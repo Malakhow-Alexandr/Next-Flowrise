@@ -26,6 +26,12 @@
             },
             "testemonials": {
               "type": "SharedSlice"
+            },
+            "call_to_action": {
+              "type": "SharedSlice"
+            },
+            "text_with_image": {
+              "type": "SharedSlice"
             }
           }
         }
