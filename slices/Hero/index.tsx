@@ -1,5 +1,5 @@
 import { Content } from "@prismicio/client";
-import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
+import { PrismicNextImage } from "@prismicio/next";
 import {
   JSXMapSerializer,
   PrismicRichText,
@@ -56,7 +56,8 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
 
             <PrismicNextImage
               field={slice.primary.image}
-              className="drop-shadow-xl max-w-4xl"
+              priority={true}
+              className="drop-shadow-xl max-w-4xl container"
             />
           </div>
         </Bounded>
@@ -85,7 +86,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
             </div>
             <PrismicNextImage
               field={slice.primary.image}
-              className="drop-shadow-xl max-w-4xl"
+              className="drop-shadow-xl max-w-4xl w-full container"
             />
           </div>
         </Bounded>
